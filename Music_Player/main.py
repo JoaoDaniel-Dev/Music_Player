@@ -4,6 +4,7 @@ from tkinter import Label
 from tkinter import Button
 from tkinter import filedialog
 
+
 volume = float(0.5)
 
 
@@ -84,7 +85,6 @@ Label(janela, text="Por favor, selecione uma faixa de música que você gostaria
       font=("Calibri", 12), fg="blue", bg="black").grid(sticky="N", row=1, padx=120)
 Label(janela, text="Volume", font=("Calibri", 14), fg="red", bg="black").grid(sticky="N", row=4, padx=120)
 
-
 song_title_label = Label(janela, font=("calibri", 12), bg="black")
 song_title_label.grid(sticky="N", row=3)
 
@@ -97,5 +97,6 @@ Button(janela, text="Pausa", font=("Calibre", 12), command=pausa, relief="raised
 Button(janela, text="Retomar", font=("Calibre", 12), command=retomar, relief="raised", bd=7).grid(row=3, sticky="W")
 Button(janela, text="-", font=("Calibre", 12), width=5, command=diminuir_volume, relief="raised", bd=7).grid(row=5, sticky="W")
 Button(janela, text="+", font=("Calibre", 12), width=5, command=aumentar_volume, relief="raised", bd=7).grid(row=5, sticky="E")
+
 
 janela.mainloop()
